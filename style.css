@@ -29,7 +29,6 @@ body{
 
 .cyan-cta-btn{
     background-color: #39b4bd;
-    height: 50px;
     border: none;
     color: white;
     padding: 18px 20px;
@@ -43,17 +42,36 @@ body{
 }
 
 .row-center{
+    
+    height:175px; /* consider removing if not needed after adding divider lines or when stacking*/
     border: 1px red solid;
     text-align: center;
+
 }
 
 .home-stats{
-    max-width: 240px;
-    margin: 0 auto;
-    text-align: center;
-    border: 1px green solid;
+    width: 33.33%;
+    max-width: 220px;
+    margin: 25px auto;
     line-height: 10px;
     display: inline-block;
+}
+
+.border{
+    border: .5px solid #000000; /* change to white after adding bg img*/
+    height: 75%; /*this may need to change after icons get added*/
+    display: inline-block;
+}
+
+@media (max-width: 700px) {
+    .home-stats{
+        width: 100%;
+        display: block;
+        margin: 60px auto; /* adjust after adding icons */
+    }
+    .border{
+        display: none;
+    }
 }
 
 .cyan{
@@ -67,7 +85,5 @@ body{
 hr{
     width:15px;
     border-style: none;
-    border-top: 3px solid #39b4bd;
-    
-    
+    border-top: 3px solid #39b4bd; 
 }
