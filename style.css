@@ -14,13 +14,17 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.h1-home{
+.headline-home{
     font-size: 2em;
     font-weight: 700;
 }
 
+.home-hero-bg{
+    background-color: #17242a;
+}
+
 .hero{
-    /*color: #ffffff; REMOVE COMENT AFTER ADDING BG IMG*/
+    color: #ffffff;
     text-align: center;
     max-width: 440px;
     height: auto;
@@ -41,38 +45,61 @@ body{
     border-radius: 45px;
 }
 
+.red-cta-btn{
+    background-color: #d81f3f;
+    border: none;
+    color: white;
+    padding: 18px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 45px;
+}
+
 .row-center{
-    
-    height:175px; /* consider removing if not needed after adding divider lines or when stacking*/
     border: 1px red solid;
     text-align: center;
 
 }
 
+.main-content-container{
+    margin: auto;
+    width: 650px;
+}
+
 .home-stats{
-    width: 33.33%;
     max-width: 220px;
-    margin: 25px auto;
+    margin: 25px 15px;
     line-height: 10px;
     display: inline-block;
+    color: #FFFFFF;
 }
 
 .border{
-    border: .5px solid #000000; /* change to white after adding bg img*/
-    height: 75%; /*this may need to change after icons get added*/
+    border: 1px solid #FFFFFF; /* change to white after adding bg img*/
+    height: 150px; /*this may need to change after icons get added*/
     display: inline-block;
 }
 
-@media (max-width: 700px) {
-    .home-stats{
-        width: 100%;
-        display: block;
-        margin: 60px auto; /* adjust after adding icons */
-    }
-    .border{
-        display: none;
-    }
+.lightbulb-bg{
+    background-color: #39b4bd;
 }
+
+.lightbulb-block{
+    border: 1px solid blue;
+    text-align: left;
+    width: 55%;
+    max-width: 575px;
+    padding-left: 62px;
+}
+
+.lightbulb-block p{
+    padding-left: 45px;
+}
+
 
 .cyan{
     color:#39b4bd;
@@ -86,4 +113,22 @@ hr{
     width:15px;
     border-style: none;
     border-top: 3px solid #39b4bd; 
+}
+
+@media (max-width: 700px) {
+    .main-content-container{
+        width: 100%;
+    }
+    
+    .home-stats{
+        width: 100%;
+        display: block;
+        margin: 60px auto; /* adjust after adding icons */
+    }
+    .border{
+        display: none;
+    }
+    .lightbulb-block{
+        width: 78%;
+    }
 }
