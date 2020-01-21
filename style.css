@@ -15,7 +15,7 @@ body{
 }
 
 .headline-home{
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
 }
 
@@ -26,7 +26,7 @@ body{
 .hero{
     color: #ffffff;
     text-align: center;
-    max-width: 440px;
+    max-width: 500px;
     height: auto;
     margin: 0 auto;
 }
@@ -67,15 +67,36 @@ body{
 
 .main-content-container{
     margin: auto;
-    width: 650px;
+    max-width: 1000px;
+    border: 1px red solid;
 }
 
 .home-stats{
-    max-width: 220px;
-    margin: 25px 15px;
+    /* max-width: 220px; this is what it used to be before chaning the content container to max width 1000px*/
+    
+    margin: 25px 40px;
     line-height: 10px;
     display: inline-block;
     color: #FFFFFF;
+}
+
+.benefits-grid{
+    border: 1px green solid;
+    width: 220px;
+    /* height: 225px; */ /* likely not needed after adding icons */
+    margin: 25px 15px;
+    display: inline-block;
+    color: #000000;   
+    vertical-align: top;
+}
+
+.benefits-grid img{
+    width: 72px;
+    height: 72px;
+}
+
+.benefits-grid p{
+    font-size: .60em;
 }
 
 .border{
@@ -84,22 +105,35 @@ body{
     display: inline-block;
 }
 
-.lightbulb-bg{
-    background-color: #39b4bd;
+.thick-border{
+    border-left: 45px solid #28aeb1;
+    min-height: 400px;
 }
 
-.lightbulb-block{
+.lightbulb-bg{
+    background-image: url(/Users/darrenharms/Documents/River\ Traffic/images/cyan-texture-bg.jpg);
+    width:100%;
+    height: auto;
+}
+
+.lightbulb-content-block{
     border: 1px solid blue;
     text-align: left;
     width: 55%;
     max-width: 575px;
     padding-left: 62px;
+    padding-top: 62px;
 }
 
-.lightbulb-block p{
-    padding-left: 45px;
+.lightbulb-content-block p{
+    padding-left: 15px;
 }
 
+.full-width{
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
 
 .cyan{
     color:#39b4bd;
@@ -128,6 +162,7 @@ hr{
     .border{
         display: none;
     }
+
     .lightbulb-block{
         width: 78%;
     }
